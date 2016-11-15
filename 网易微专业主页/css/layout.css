@@ -1,0 +1,533 @@
+/* 顶部消息提醒 */
+body{
+	font-family: 'arial',sans-serif;
+}
+.head .message_top{
+	width: 100%;
+	height: 34px;
+	line-height: 34px;
+	background-color: #f3f3f3;
+	color: #333333;
+}
+.head .message_top .content{
+	width: 1210px;
+	font-size: 14px;
+	
+	width: 1210px;
+	margin: 0 auto;
+}
+
+/* 清除浮动 */
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.clearfix:before,.clearfix:after{
+	content: '';
+	display: table;
+}
+.clearfix:after{
+	clear: both;
+}
+
+.head .message_top .content a{
+	color: #21A557;
+}
+.head .message_top .content a:hover{
+	text-decoration: underline;
+
+}
+.head .message_top .content .right{
+	font-size: 14px;
+	color: #666666;
+}
+.head .message_top .content .right:hover{
+	cursor: pointer;
+	color: red;
+}
+
+
+/* 顶部logo */
+.head .logo{
+	width: 1210px;
+	height: 90px;
+	line-height: 90px;
+	margin: 0 auto;
+	color: #333;
+}
+.head .logo span{
+	font-size: 18px;
+	letter-spacing: 4px;
+}
+.head .logo input:hover{
+	cursor: pointer;
+}
+.head .logo input{
+	margin-left: 30px;
+	border: none;
+	color: white;
+	background: #21A557;
+	border-radius: 2px;
+}
+.head .logo a{
+	font-size: 14px;
+	color: #595656;
+	margin-left: 20px;
+}
+.head .logo .right li{
+	float: left;
+	margin-right: 20px;
+}
+.head .logo .right li:nth-of-type(1) a:hover{
+	color: green;
+}
+
+
+
+
+/* 登陆框 */
+html,body{
+	width: 100%;
+	height: 100%;
+}
+.login-box{
+	width:100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	z-index: 9999;
+}
+.mask{
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 100%;
+	position: absolute;
+	
+	background: #333333;
+	opacity: 0.5;
+}
+.login-box .login{
+	box-sizing: border-box;
+	width: 390px;
+	height: 290px;
+	background: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	padding: 30px 40px;
+}
+.login-box .login input{
+	width: 295px;
+	height: 45px;
+	display: block;
+	margin-top: 20px;
+	padding: 0;
+	box-sizing: border-box;
+}
+.login-box .login input[type='text'],.login-box .login input[type='password']{
+	padding-left: 15px;
+	border: 1px solid #dfdfdf;
+}
+.login-box .login input[type='button']{
+	color: white;
+	background: #26ad49;
+	border: none;
+}
+
+/* 设置取消关注 */
+#cancle{
+	display: inline-block;
+	font-size: 14px;
+	width: 105px;
+	letter-spacing: normal;
+	line-height: 21px;
+	border: 1px solid #efefef;
+	padding: 0 6px;
+	display: none;
+	border-radius: 2px;
+}
+#cancle i{
+	padding: 0 5px;
+	color: #999999;
+}
+#cancle:hover{
+	cursor: pointer;
+}
+#cancle i:nth-of-type(2):hover{
+	text-decoration: underline;
+	color: #21a557;
+}
+
+
+
+/* 轮播图 */
+.banner{
+	margin: 0 auto;
+	position: relative;
+}
+
+.banner li{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	display: none;
+
+}
+
+.banner .icons{
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.banner .icons span:hover{
+	cursor: pointer;
+}
+.banner .icons span{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background: black;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+.banner .icons .active{
+	background:white;
+}
+
+
+/* 课程介绍 */
+
+.introduce{
+
+	width: 1210px;
+	height: 293px;
+	margin: 0 auto;
+}
+.introduce li{
+	box-sizing: border-box;
+	float: left;
+	width: 403px;
+	padding: 50px 40px 50px 100px;
+}
+.introduce li h3{
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 42px;
+}
+.introduce li p{
+	font-size: 14px;
+	line-height: 26px;
+	color: #3f3f3f;
+}
+.introduce li a{
+	font-size: 16px;
+	margin-top: 32px;
+	display: inline-block;
+	color: #39a030;
+}
+.introduce li a:hover{
+	text-decoration: underline;
+}
+.introduce li:nth-of-type(1){
+	background: url('../imgs/1.png') no-repeat;
+	background-position: 3px 70px;
+}
+.introduce li:nth-of-type(2){
+	background: url('../imgs/2.png') no-repeat;
+	background-position: 3px 70px;
+}
+.introduce li:nth-of-type(3){
+	background: url('../imgs/3.png') no-repeat;
+	background-position: 3px 70px;
+}
+
+
+
+/* 中间背景层 */
+.bg{
+	margin: 0 auto;
+	width: 100%;
+	background: url('../imgs/4.jpg') no-repeat;
+	background-size: 100%;
+	height: 222px;
+}
+
+/* 课程列表 */
+.main{
+	width: 1210px;
+	margin: 0 auto;
+}
+.main .main_head input{
+	font-size: 22px;
+	float: left;
+	width: 200px;
+	height: 52px;
+	border: none;
+	box-shadow: 1px 1px #3f3f3f;
+}
+.main .main_head .active{
+	background: #39a030;
+	color: white;
+}
+
+.main .content li{
+	float: left;
+}
+.main .pageno li:hover{
+	cursor: pointer;
+}
+.main .pageno li{
+	float: left;
+	list-style: none;
+	width: 20px;
+	height: 20px;
+	margin: 5px;
+	text-align: center;
+	line-height: 20px;
+}
+.main .pageno .active{
+	color: white;
+	background: #9dd8b1;
+}
+.main .pageno li:first-child,.main .pageno li:last-child{
+	width: 30px;
+	background: #9dd8b1;
+	color: white;	
+	font-size: 16px;
+}
+
+.main .content li{
+	width: 226px;
+	height: 230px;
+	box-sizing: border-box;
+	border: 1px solid #f1f1f1;
+	border-top: none;
+	margin: 30px 15px 0 0;
+	
+
+}
+.main .content li img{
+	width: 226px;
+	height: 128px;
+}
+.main .content ul{
+	width: 968px;
+}
+.main .content li h3,.main .content li span{
+	font-size: 14px;
+	line-height: 24px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.main .content li span{
+	color: #3f3f3f;
+}
+.main .content li input{
+	display: block;
+	padding-left: 20px;
+	line-height: 18px;
+	font-size: 10px;
+	border: 1px solid #dddddd;
+	color: #3f3f3f;
+	border-radius: 3px;
+	background: url('../imgs/icon_03.png') no-repeat;
+	background-position: 4px 3px;
+}
+
+.main .content li i{
+	color: #ff3f00;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 30px;
+}
+
+.main .page_foot{
+	margin-top: 15px;
+	width: 968px;
+}
+
+/* 课程详情 */
+.main .content{
+	position: relative;
+}
+#explain{
+	position: absolute;
+	background: white;
+	width: 484px;
+	height: 230px;
+	border: 1px solid #c1c0c0;
+	display: none;
+	padding: 10px;
+	overflow: hidden;
+}
+#explain img{
+	width: 226px;
+	height: 128px;
+	margin-bottom: 20px;
+}
+#explain ul li{
+	height: 30px;
+	margin: 0;
+	line-height: 1.2em;
+	border: none;
+}
+#explain ul{
+	width: 226px;
+	height: 128px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+#explain ul h3{
+	font-size: 20px;
+	
+	font-weight: 400;
+	
+}
+#explain ul .people_num{
+	padding-left: 20px;
+	background: url('../imgs/icon_03.png') no-repeat;
+	background-position: 4px 2px;
+}
+#explain p{
+	
+	font-size: 14px;
+	line-height: 1.4em;
+	color: #3f3f3f;
+	display: block;
+	height: 75px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+
+}
+
+
+
+/* 边栏机构介绍 */
+.side{
+	margin-left: 15px;
+}
+.side .video h3{
+	font-size: 18px;
+	line-height: 26px;
+	padding: 15px;
+	border-bottom: 1px solid #ecebeb;
+}
+.side .video{
+	border: 1px solid #ecebeb;
+	border-top: none;
+}
+.side .video p{
+	font-size: 16px;
+	line-height: 32px;
+	color: #3f3f3f;
+}
+.side .video div{
+	padding: 10px;
+}
+.player{
+	display: none;
+}
+#player .video_box{
+	width: 634px;
+	height: 454px;
+	background: white;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 999999;
+	padding: 30px;
+}
+#player .video_box .close{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 30px;
+	height: 30px;
+	display: block;
+	background: url('../imgs/close.png') no-repeat;
+}
+
+
+
+/* 边栏排行榜单 */
+#hot_list{
+	padding: 10px;
+}
+#hot_list li{
+	width: 204px;
+	list-style: none;
+	height: 70px;
+	margin: 10px 0;
+}
+#hot_list li img{
+	float: left;
+	margin-right: 5px;
+}
+.hot_list h2{
+	padding: 10px;
+	line-height: 34px;
+	border-bottom: 1px solid #eeeeee;
+}
+.hot_list h3{
+	
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 30px;
+}
+.hot_list span{
+	background:url('../imgs/icon_03.png') no-repeat;
+	background-position: 4px 5px;
+	padding-left: 20px;
+	font-size: 14px;
+	display: inline-block;
+	line-height: 22px;
+}
+.hot_list{
+	border: 1px solid #eeeeee;
+	
+}
+
+
+
+/* 底部 */
+.foot{
+	width: 100%;
+	background: #2c3339;
+}
+.foot .contain{
+	width: 1110px;
+	margin: 0 auto;
+	padding: 75px;
+}
+.foot .contain h3{
+	font-size: 20px;
+	line-height: 50px;
+	color: #39a030;
+	letter-spacing: 5px;
+}
+.foot .contain p{
+	font-size: 12px;
+	color: #bebfc0;
+	line-height: 26px;
+}
+.foot .contain dl{
+	width: 220px;
+	float: left;
+	color: #bebfc0;
+	font-size: 16px;
+	line-height: 32px;
+}

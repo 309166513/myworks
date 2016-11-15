@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>3D立方体</title>
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<meta name="author" content="@my_programmer">
+<style type="text/css">
+
+    *{
+        padding: 0; margin: 0; 
+    }
+    body{
+        background: black;
+    }
+    img{
+        border:none;
+    }
+    li{
+        list-style:none;
+    }
+
+    ul{
+        width:200px;
+        height:200px;
+        margin:100px auto;
+        position:relative;
+        transform-style:preserve-3d;
+        -webkit-transform-style:preserve-3d;
+    }    
+        /*如果在ul里设置：-webkit-perspective:400px;-webkit-perspective-origin:0% 50%; 则会有透视、景深的效果*/
+    li{
+        width:200px;
+        height:200px;
+        position:absolute;
+        text-align:center;
+        line-height:200px;
+        font-size:80px;
+        font-weight:bold;
+        color:#fff;
+    }
+    li:nth-child(1){
+        background:url('imgs/1.jpeg') no-repeat;
+        transform:rotateX(90deg)   translateZ(100px);
+        -webkit-transform:rotateX(90deg)   translateZ(100px);
+    }
+    li:nth-child(2){
+        background:url('imgs/2.jpg') no-repeat;
+        transform:rotateX(270deg)  translateZ(100px);
+        -webkit-transform:rotateX(270deg)  translateZ(100px);
+    }
+    li:nth-child(3){
+        background:url('imgs/3.jpg') no-repeat;
+        transform:rotateY(90deg) translateZ(100px);
+        -webkit-transform:rotateY(90deg) translateZ(100px);
+    }
+    li:nth-child(4){
+       background:url('imgs/4.jpg') no-repeat;
+       transform:rotateY(270deg) translateZ(100px);
+        -webkit-transform:rotateY(270deg) translateZ(100px);
+    }
+    li:nth-child(5){
+        background:url('imgs/5.jpg') no-repeat;
+        transform:translateZ(-100px);
+        -webkit-transform:translateZ(-100px);
+    }
+    li:nth-child(6){
+        background:url('imgs/6.jpg') no-repeat;
+        transform: translateZ(100px);
+        -webkit-transform: translateZ(100px);
+    }
+   
+            /*****当执行下列css时，立方体无限自由旋转******/
+    ul{-webkit-animation:run 5s linear infinite ;}    
+    @-webkit-keyframes run{
+        0%{-webkit-transform: rotateX(0deg) rotateY(0deg) }
+        100%{-webkit-transform:rotateX(360deg)  rotateY(360deg)  }
+    }
+
+</style>
+</head>
+<body>
+    <ul id="ul">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    
+
+</body>
+</html>

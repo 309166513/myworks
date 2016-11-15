@@ -1,0 +1,18 @@
+
+.main .lesson{
+	width: 724px;
+	
+}
+#lesson{
+	width: 724px;
+}
+.introduce li{
+	width: 330px;
+}
+.head .logo{
+	width: 1120px;
+	box-sizing: border-box;
+}
+.head .message_top .content{
+	width: 1120px;
+}

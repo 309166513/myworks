@@ -76,20 +76,20 @@ function getByClass(){
 }  
 
 
-function getStyle(target){
-	if(getComputedStyle(target)){
-		return getComputedStyle(target);
+/*function getStyle(target){
+	if(target.currentStyle){
+		return target.currentStyle;
 	}else{
-		return target.currentStyle;//IE6,7,8
+		return getComputedStyle(target);//IE6,7,8
+	}
+}*/
+function getStyle(target,style){
+	if(target.currentStyle){
+		return target.currentStyle[style];
+	}else{
+		return getComputedStyle(target)[style];//IE6,7,8
 	}
 }
-function getStyle2(target,style){
-	if(getComputedStyle(target,style)){
-		return getComputedStyle(target)[style];
-	}else{
-		return target.currentStyle[style];//IE6,7,8
-	}
-}  
 
 
 
